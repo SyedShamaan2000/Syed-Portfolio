@@ -73,7 +73,7 @@ export const portfolioData: PortfolioData = {
       description: "AI-powered financial tracking and budgeting web application utilizing the Gemini API for smart, personalized spending breakdowns, and the MERN stack for robust multi-user transactional records.",
       image: "https://lh3.googleusercontent.com/aida-public/AB6AXuADdr6SofZ9zZsLZkMG654XTKpcYYTV2hU2IvSpI5SSQbl9eNNmOnCFzk9MumqrmyHgUkTG9vioOUKGxVDe2tIyPRB4pUaR8LGOHPf-u4Y47dYMakxBwOee96RItr4RgBtMNO2EVwyLKiOXzAyStHYGdZZ0dpW9yxQ1yu2n2ez1nr7jBY7MzrStlLsZcpnoX8eq4Ng6SkwwrbwQd9nAbMeGoe4lkmFnr5JZDL2jM7fxTZRVD3-wgzgYk2KR3N3HUsDFOHQnONMleszE",
       tags: ["MERN Stack", "Gemini API", "Recharts", "Tailwind CSS"],
-      githubUrl: "https://github.com/SyedShamaan2000/",
+      githubUrl: "https://github.com/Shamaan3066/budget-buddy",
       demoUrl: "#",
       fullDetails: {
         challenge: "Managing irregular expenditures can be daunting. Users need simple logs aligned with smart analysis that categorizes spending logs dynamically.",
@@ -93,7 +93,7 @@ export const portfolioData: PortfolioData = {
       description: "Intelligent language acquisition and immersive interactive conversational practice tool powered by Gemini API, complete with contextual word corrections and conversational prompts.",
       image: "https://lh3.googleusercontent.com/aida-public/AB6AXuApHrJHDi5TN7TlmINofvHcctMU1Y_46zOmOZK-PZNxIuw3kvnYFN25-jDJopxTrQYK4-on4IVAMaJD558kIKuxfPa0TtF8Io1q9LAQ70wH-jTOvkxtTS7cHRX7hWVd6u_6BzSs88HD4xbFbLhYiMjjRHJliY1TGGHKtXcSYenSXtPq9LXAVBVjkHiwoQe1lCf0Gd1B6_t0NXH8a-DfHuC8-vJElrNgQi2KMI8N9SqgiRC6oc9O31GMYNUBA2nl6cXKnlED0xYhZhKd",
       tags: ["React", "Express", "Python", "Gemini Pro"],
-      githubUrl: "https://github.com/SyedShamaan2000/",
+      githubUrl: "https://github.com/Shamaan3066/AI-ChatLingo",
       demoUrl: "#",
       fullDetails: {
         challenge: "Language pupils lack risk-free arenas to speak and test foreign speech structures with fluid corrections.",
@@ -112,7 +112,7 @@ export const portfolioData: PortfolioData = {
       description: "High-contrast minimalist project orchestrator featuring streamlined workflow controls, responsive status states, customized JWT authorizations, and reliable user access lists.",
       image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDMUxRrSPV3F7__qethW5pF_Xf6-2EdZN9tvfmle-SnJ9A3Fe10T9soo-7gARmBolT60YJov77ggO64vHauBWpRDb1_EjBrh-0E-OdzNqJ-dnCMzJuUUOAxjWps1DzMltUuQRPd87aoR89TSVpavLnut2ImBUX_POWs9KVZ1zQiOdOx9xbSgpeawh5degt_zeAqoPJUxhLbIHB_DDNf7_laNdtau6MuRFmrmWEr822QEPp-8BYySLowd0l8RO4aR99jocjXwBWfKBCs",
       tags: ["React.js", "Node.js", "MongoDB", "Redux Toolkit"],
-      githubUrl: "https://github.com/SyedShamaan2000/",
+      githubUrl: "https://github.com/Shamaan3066/taskapp",
       demoUrl: "#",
       fullDetails: {
         challenge: "Traditional project managers are weighed down by heavy layout structures. Creative teams demand visual brevity and super responsive state flows.",
