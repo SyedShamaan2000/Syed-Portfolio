@@ -8,7 +8,7 @@ export const portfolioData: PortfolioData = {
     "I am a Full Stack Developer specializing in the MERN stack, bridging the gap between complex backend systems and intuitive user interfaces. My approach is rooted in technical precision, clean code, and high-performance engineering.",
     "Driven by modern development tools and minimalist aesthetics, I design and optimize scalable systems. Based in Hyderabad, I have engineered custom features that reduced re-renders, deployed Docker-based pipelines, integrated secure payment gateways, and built AI-augmented platforms."
   ],
-  avatarUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuBJooz5LDEmSziFtfjW1d6lzxVWvksMKs1XlRkCCph3rFRbrn81A9jkOrqETSrER22NV-eNh2SNkLCfY0CMVanACbT67DH88nDdZNIzBvEARvgYTnFwzjv1-4DfdrsN5PcdEmBmF_qHZfQip-LwJ_wKINpZwwMa-6kIw0LZZCjFcyoqZj953vAu1qAvD4DJWSrQtThZ32Qnb_0bmlQSuCuh78DB_8847_SDuJfAKoEEQLzsoSh_O7cNXVW99lKKNKV9-c6FZ8dgE_lY",
+  avatarUrl: "/photo.jpg",
   resumeUrl: "#", // will trigger modal
   contact: {
     email: "syedshamaan14@gmail.com",
