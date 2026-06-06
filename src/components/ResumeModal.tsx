@@ -120,7 +120,7 @@ PROJECTS
                 </span>
                 <span className="text-xs text-txt-low hidden sm:inline">- A4 Printable Layout</span>
               </div>
-              
+
               <div className="flex items-center gap-3">
                 <button
                   onClick={downloadTextResume}
@@ -141,10 +141,10 @@ PROJECTS
             </div>
 
             {/* A4 Document sheet simulation viewport */}
-            <div className="flex-1 overflow-y-auto p-4 md:p-8 bg-zinc-800/85 dark:bg-slate-900/40 custom-scrollbar flex justify-center">
+            <div className="flex-1 overflow-y-auto p-4 md:p-8 bg-zinc-800/85 dark:bg-slate-900/40 custom-scrollbar flex flex-col items-center">
               {/* Paper Sheet canvas container */}
-              <div className="bg-white text-zinc-900 w-full max-w-[210mm] min-h-[297mm] p-6 sm:p-12 shadow-2xl rounded border border-neutral-200 select-text overflow-hidden relative font-sans text-xs sm:text-sm leading-relaxed">
-                
+              <div className="bg-white text-zinc-900 w-full max-w-[210mm] min-h-[297mm] mb-8 p-6 sm:p-12 shadow-2xl rounded border border-neutral-200 select-text relative font-sans text-xs sm:text-sm leading-relaxed shrink-0">
+
                 {/* Header Profile Section */}
                 <div className="text-center pb-6 border-b border-zinc-200">
                   <h1 className="text-xl sm:text-2xl font-bold font-display uppercase tracking-wider text-black">
@@ -153,7 +153,7 @@ PROJECTS
                   <p className="text-emerald-700 font-medium tracking-wide mt-1 text-sm">
                     Full Stack Developer • Hyderabad, Telangana
                   </p>
-                  
+
                   {/* Digital labels stack */}
                   <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-1.5 mt-3 text-[11px] text-zinc-600">
                     <span className="flex items-center gap-1">
