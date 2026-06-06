@@ -1,4 +1,4 @@
-import { X, Download, Eye, Briefcase, GraduationCap, Award, Globe, Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
+import { X, Download, Mail, Phone, Linkedin, Award } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
 interface ResumeModalProps {
@@ -7,83 +7,15 @@ interface ResumeModalProps {
 }
 
 export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
-  const downloadTextResume = () => {
-    const textContent = `
-=========================================
-PEERZADA SYED SHAMAAN HUSSAINI
-=========================================
-Location: Hyderabad, Telangana
-Email: syedshamaan14@gmail.com
-Phone: +91 9100337152
-LinkedIn: linkedin.com/in/syed-shamaan-hussaini
 
-SUMMARY:
-Full Stack Developer with expertise in the MERN stack, API design, and secure, scalable web applications. Experienced in Stripe payment integration, PostgreSQL database management, Docker containerization, and implementing web security best practices. Familiar with LLM integration for intelligent features and performance optimization. Adept at collaborating in agile teams to deliver reliable, production-ready software.
-
-=========================================
-SKILLS
-=========================================
-- Languages: JavaScript, Python, C, C++
-- Frameworks & Libraries: React, Redux, Tailwind CSS, Material UI, FastAPI, Streamlit
-- Backend & Serverless: Node.js, Express.js, API Gateway, RESTful API Development, Server-Side Logic, Data Security
-- Databases: MongoDB, PostgreSQL, Firebase
-- Cloud & DevOps: Docker, GitHub Actions, Git/GitHub, CI/CD Pipelines, Netlify
-- API Integration: Expertise in integrating AI-driven APIs (OpenAI, Gemini)
-- Soft Skills: Communication, Teamwork, Collaboration, Problem Solving, Critical Thinking, Time & Project Management
-
-=========================================
-WORK HISTORY
-=========================================
-1. Full Stack Developer (December 2024 - Present)
-   Sakesh InfoTech Pvt Ltd, Hyderabad, India | Texas, USA
-   * Built and optimized React UI components for over 5 features, improving performance and usability and reducing unnecessary re-renders by ~25%.
-   * Created scalable FastAPI backend services with structured validation and error handling, delivering 10+ APIs supporting real-time client consumption.
-   * Managed application databases across development and production environments, handling thousands of records while ensuring data integrity, backups, and optimized queries.
-   * Integrated LLM workflows to summarize multi-page DOCX documents and dynamically generate PPTX presentations.
-   * Configured and integrated Stripe price IDs into frontend and backend services, enabling 1 new pricing tier within the existing payment system.
-   * Used Dockerized workflows to support deployments and maintenance.
-
-2. Remote Software Developer Intern (Jan 2024 - Feb 2024)
-   CodeClause, Pune, India
-   * Engineered a language translation tool with OpenAI API, enhancing user satisfaction and translation accuracy.
-
-=========================================
-EDUCATION
-=========================================
-- Bachelor of Engineering (Computer Science) | 2020 - 2024
-  Deccan College of Engineering and Technology (Osmania University), Hyderabad, India
-  CGPA: 7.43
-  
-- Intermediate (MPC) | 2018 - 2020
-  MS Junior College, Hyderabad, India
-  CGPA: 9.53
-  
-- Secondary School (SSC) | 2018
-  MS Creative School, Hyderabad, India
-  CGPA: 9.2
-
-=========================================
-ACHIEVEMENTS
-=========================================
-- Secured 1st Winner Place at a Hackathon conducted by MetLife Company.
-
-=========================================
-PROJECTS
-=========================================
-- BudgetBuddy (Finance Tracking): MERN stack with Gemini API integration.
-- AI-ChatLingo (Language Learning Platform): AI conversation partner with Gemini API.
-- TaskTrackr (Project Manager): Secure auth flow with JWT & MongoDB.
-`;
-
-    const blob = new Blob([textContent], { type: "text/plain;charset=utf-8" });
-    const url = URL.createObjectURL(blob);
+  const downloadPDFResume = () => {
+    // Triggers a direct download of the PDF file hosted in your public folder
     const link = document.createElement("a");
-    link.href = url;
-    link.download = "Peerzada_Syed_Shamaan_Hussaini_Resume.txt";
+    link.href = "/resume.pdf";
+    link.setAttribute("download", "Peerzada_Syed_Shamaan_Hussaini_Resume.pdf");
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    URL.revokeObjectURL(url);
   };
 
   return (
@@ -109,7 +41,7 @@ PROJECTS
             className="relative bg-surf-lowest dark:bg-surf-low w-full max-w-4xl h-[90vh] rounded-xl shadow-2xl border border-border-custom overflow-hidden flex flex-col"
             id="resume-modal"
           >
-            {/* Real PDF-Viewer styled Top bar */}
+            {/* Top Bar */}
             <div className="bg-surf-low dark:bg-surf-lowest border-b border-border-custom px-6 py-4 flex flex-wrap justify-between items-center gap-3">
               <div className="flex items-center gap-2.5">
                 <div className="p-1 px-2.5 bg-red-500/10 text-red-500 font-mono text-xs font-bold rounded">
@@ -123,12 +55,12 @@ PROJECTS
 
               <div className="flex items-center gap-3">
                 <button
-                  onClick={downloadTextResume}
+                  onClick={downloadPDFResume}
                   className="bg-emerald-accent hover:bg-emerald-hover text-white dark:text-bg-page px-4 py-1.5 rounded-full text-xs font-bold flex items-center gap-2 transition-all cursor-pointer shadow-sm active:scale-95"
-                  title="Download raw document"
+                  title="Download PDF Document"
                 >
                   <Download className="h-3.5 w-3.5" />
-                  <span>Download</span>
+                  <span>Download PDF</span>
                 </button>
                 <button
                   onClick={onClose}
@@ -213,7 +145,6 @@ PROJECTS
                     Work History
                   </h2>
                   <div className="space-y-4">
-                    {/* Job 1 */}
                     <div>
                       <div className="flex justify-between items-start font-semibold text-zinc-900">
                         <div>
@@ -234,7 +165,6 @@ PROJECTS
                       </ul>
                     </div>
 
-                    {/* Job 2 */}
                     <div>
                       <div className="flex justify-between items-start font-semibold text-zinc-900">
                         <div>
@@ -307,7 +237,7 @@ PROJECTS
                   </div>
                 </div>
 
-                {/* Footer Signature watermark representing PDF system printing */}
+                {/* Footer Signature watermark */}
                 <div className="text-center text-[10px] text-zinc-400 mt-8 pt-4 border-t border-zinc-100">
                   Document electronically verified • Peerzada Syed Shamaan Hussaini
                 </div>
