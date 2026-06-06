@@ -8,7 +8,7 @@ export const portfolioData: PortfolioData = {
     "I am a Full Stack Developer specializing in the MERN stack, bridging the gap between complex backend systems and intuitive user interfaces. My approach is rooted in technical precision, clean code, and high-performance engineering.",
     "Driven by modern development tools and minimalist aesthetics, I design and optimize scalable systems. Based in Hyderabad, I have engineered custom features that reduced re-renders, deployed Docker-based pipelines, integrated secure payment gateways, and built AI-augmented platforms."
   ],
-  avatarUrl: "/photo.jpg",
+  avatarUrl: `${import.meta.env.BASE_URL}photo.jpg`,
   resumeUrl: "#", // will trigger modal
   contact: {
     email: "syedshamaan14@gmail.com",

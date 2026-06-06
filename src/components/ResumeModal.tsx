@@ -11,7 +11,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
   const downloadPDFResume = () => {
     // Triggers a direct download of the PDF file hosted in your public folder
     const link = document.createElement("a");
-    link.href = "/resume.pdf";
+    link.href = `${import.meta.env.BASE_URL}resume.pdf`;
     link.setAttribute("download", "Peerzada_Syed_Shamaan_Hussaini_Resume.pdf");
     document.body.appendChild(link);
     link.click();
