@@ -27,13 +27,6 @@ export default function Hero({ onOpenResume }: HeroProps) {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
         {/* Left Intro Text Column */}
         <div className="lg:col-span-7">
-          <ScrollReveal direction="up" delay={0.1}>
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-glow rounded-full text-xs font-mono font-medium text-emerald-accent tracking-widest uppercase mb-6 border border-emerald-accent/20">
-              <span className="w-2 h-2 bg-emerald-accent rounded-full animate-pulse" />
-              Available for Hire
-            </div>
-          </ScrollReveal>
-
           <ScrollReveal direction="up" delay={0.2}>
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-txt-high leading-tight">
               Peerzada Syed <br />
@@ -58,7 +51,7 @@ export default function Hero({ onOpenResume }: HeroProps) {
                 <Eye className="h-4 w-4" />
                 View My Resume
               </button>
-              
+
               <button
                 onClick={handleScrollToProjects}
                 className="border border-border-custom hover:border-emerald-accent text-txt-high hover:text-emerald-accent hover:bg-emerald-glow/10 font-semibold px-8 py-4 rounded font-display uppercase tracking-wider text-sm transition-all duration-300 active:scale-95 cursor-pointer flex items-center gap-1"
@@ -77,14 +70,6 @@ export default function Hero({ onOpenResume }: HeroProps) {
               {/* Animated surrounding borders and neon glow circles */}
               <div className="absolute inset-0 bg-emerald-accent/10 rounded-3xl blur-2xl group-hover:bg-emerald-accent/20 transition-all duration-500 scale-95" />
               <div className="absolute -inset-1 border border-emerald-accent/20 group-hover:border-emerald-accent/50 rounded-3xl transition-all duration-500 scale-102" />
-              
-              {/* Dynamic decorative visual boxes representing core components */}
-              <div className="absolute -top-4 -right-4 bg-surf-low/90 border border-border-custom p-3 rounded-xl shadow-lg font-mono text-[10px] text-emerald-accent hidden md:block">
-                <span>const dev = MERN;</span>
-              </div>
-              <div className="absolute -bottom-4 -left-4 bg-surf-low/90 border border-border-custom p-3 rounded-xl shadow-lg font-mono text-[10px] text-electric-blue hidden md:block">
-                <span>API_Design: "Scalable"</span>
-              </div>
 
               {/* Avatar Image Frame */}
               <div className="w-full h-full bg-surf-low border border-border-custom rounded-2xl overflow-hidden shadow-xl aspect-square relative z-10 transition-transform duration-500 group-hover:scale-101">

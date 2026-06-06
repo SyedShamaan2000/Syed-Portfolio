@@ -30,15 +30,12 @@ export default function Contact() {
     <section id="contact" className="max-w-7xl mx-auto px-6 md:px-12 py-16 lg:py-24 border-t border-border-custom/50 text-center">
       <div className="max-w-2xl mx-auto">
         <ScrollReveal direction="up" delay={0.1}>
-          <div className="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-emerald-accent tracking-widest uppercase mb-4">
-            <span className="w-1.5 h-1.5 bg-emerald-accent rounded-full" />
-            04 / Get In Touch
-          </div>
-          
+
+
           <h2 className="font-display text-3xl sm:text-4xl font-extrabold tracking-tight text-txt-high mb-6">
             Ready to build something impactful?
           </h2>
-          
+
           <p className="text-base sm:text-lg text-txt-mid leading-relaxed mb-10">
             I'm currently looking for new opportunities to collaborate on innovative projects. Whether you have a question or just want to say hi, my inbox is always open.
           </p>
@@ -46,14 +43,14 @@ export default function Contact() {
 
         {/* Contact Links & Dynamic Action Panel */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start text-left mt-8">
-          
+
           {/* Details Column */}
           <div className="md:col-span-5 space-y-6">
             <ScrollReveal direction="left" delay={0.15}>
               <h3 className="font-display text-sm font-bold uppercase tracking-wider text-txt-high mb-4">
                 Direct Contact
               </h3>
-              
+
               <div className="space-y-4 font-mono text-xs sm:text-sm text-txt-mid">
                 <a
                   href={`mailto:${portfolioData.contact.email}`}
@@ -62,7 +59,7 @@ export default function Contact() {
                   <Mail className="h-4.5 w-4.5 text-emerald-accent" />
                   <span>{portfolioData.contact.email}</span>
                 </a>
-                
+
                 <div className="flex items-center gap-3 p-3.5 rounded-lg bg-surf-lowest dark:bg-surf-low border border-border-custom shadow-sm text-txt-low">
                   <MapPin className="h-4.5 w-4.5 text-emerald-accent/70" />
                   <span>{portfolioData.contact.location}</span>
@@ -115,7 +112,7 @@ export default function Contact() {
                   >
                     Use my email client instead
                   </a>
-                  
+
                   <button
                     type="submit"
                     disabled={isLoading}
@@ -139,7 +136,7 @@ export default function Contact() {
                       className="mt-3 flex items-center gap-2 text-xs font-mono text-emerald-accent bg-emerald-glow p-3 rounded border border-emerald-accent/20"
                     >
                       <CheckCircle className="h-4.5 w-4.5" />
-                      <span>Thank you, Shamaan will get back to you shortly!</span>
+                      <span>Thank you, Syed will get back to you shortly!</span>
                     </motion.div>
                   )}
                 </AnimatePresence>

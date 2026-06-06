@@ -27,9 +27,8 @@ export default function Experience() {
             {portfolioData.experience.map((job, index) => (
               <ScrollReveal key={job.company + job.role} direction="up" delay={index * 0.15}>
                 <div className="group relative pl-4 md:pl-6 border-l-2 border-border-custom hover:border-emerald-accent transition-all duration-300">
-                  
                   {/* Absolute Timeline Dot indicator */}
-                  <div className="absolute top-1.5 -left-1.5 w-3.5 h-3.5 rounded-full border-2 border-border-custom group-hover:border-emerald-accent bg-bg-page transition-colors duration-300" />
+                  <div className="absolute top-1.5 -left-2 w-3.5 h-3.5 rounded-full border-2 border-border-custom group-hover:border-emerald-accent bg-bg-page transition-colors duration-300" />
 
                   {/* Header metadata layout */}
                   <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
@@ -41,7 +40,7 @@ export default function Experience() {
                         {job.company}
                       </p>
                     </div>
-                    
+
                     <div className="flex flex-col sm:flex-row sm:items-center gap-x-3 gap-y-1 text-xs text-txt-low">
                       <span className="inline-flex items-center gap-1 bg-surf-low px-2 py-1 rounded border border-border-custom/30 text-emerald-accent font-mono">
                         <Calendar className="h-3 w-3" />

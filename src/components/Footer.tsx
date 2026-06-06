@@ -49,7 +49,7 @@ export default function Footer() {
             <a
               href={`mailto:${portfolioData.contact.email}`}
               className="hover:text-emerald-accent transition-colors p-1"
-              aria-label="Email Shamaan"
+              aria-label="Email Syed"
             >
               <Mail className="h-5 w-5" />
             </a>

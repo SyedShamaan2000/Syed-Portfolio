@@ -73,7 +73,7 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="font-display text-lg md:text-xl font-bold text-txt-high tracking-tight hover:text-emerald-accent transition-colors cursor-pointer"
         >
-          Shamaan<span className="text-emerald-accent">.dev</span>
+          Syed<span className="text-emerald-accent">.dev</span>
         </button>
 
         {/* Desktop Navigation */}
