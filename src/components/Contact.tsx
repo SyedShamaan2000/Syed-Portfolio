@@ -1,29 +1,66 @@
 import React, { useState, FormEvent } from "react";
 import ScrollReveal from "./ScrollReveal";
 import { portfolioData } from "../data";
-import { Send, Mail, MapPin, CheckCircle } from "lucide-react";
+import { Send, Mail, MapPin, CheckCircle, AlertCircle } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
 export default function Contact() {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isSent, setIsSent] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    if (!email || !message) return;
+    if (!name || !email || !message) return;
 
     setIsLoading(true);
-    // Simulate real-world network latency
-    setTimeout(() => {
+    setErrorMessage("");
+    setIsSent(false);
+
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+    if (!accessKey || accessKey === "YOUR_WEB3FORMS_ACCESS_KEY") {
+      console.warn("Web3Forms API key is missing or set to placeholder in .env.");
+      setErrorMessage("Form configuration is incomplete. Please set your VITE_WEB3FORMS_ACCESS_KEY environment variable.");
       setIsLoading(false);
-      setIsSent(true);
-      setEmail("");
-      setMessage("");
-      // Reset successful status alert soon after
-      setTimeout(() => setIsSent(false), 5000);
-    }, 1500);
+      return;
+    }
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: accessKey,
+          name: name,
+          email: email,
+          message: message,
+          subject: `New Portfolio Contact Form Submission from ${name}`,
+        }),
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        setIsSent(true);
+        setName("");
+        setEmail("");
+        setMessage("");
+        // Reset successful status alert soon after
+        setTimeout(() => setIsSent(false), 8000);
+      } else {
+        setErrorMessage(data.message || "Failed to send the message. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error submitting contact form:", error);
+      setErrorMessage("A network error occurred. Please check your connection and try again.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -75,6 +112,21 @@ export default function Contact() {
                 onSubmit={handleSubmit}
                 className="bg-surf-lowest dark:bg-surf-low p-6 rounded-xl border border-border-custom text-left shadow-md flex flex-col gap-4"
               >
+                <div>
+                  <label htmlFor="user-name" className="block text-xs font-mono font-bold tracking-wider text-txt-low uppercase mb-1.5">
+                    Your Name
+                  </label>
+                  <input
+                    id="user-name"
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                    placeholder="John Doe"
+                    className="w-full bg-bg-page dark:bg-surf-mid text-txt-high text-sm p-3 rounded border border-border-custom focus:outline-none focus:border-emerald-accent font-sans transition-colors"
+                  />
+                </div>
+
                 <div>
                   <label htmlFor="user-email" className="block text-xs font-mono font-bold tracking-wider text-txt-low uppercase mb-1.5">
                     Your Email
@@ -135,8 +187,19 @@ export default function Contact() {
                       exit={{ opacity: 0, y: 10 }}
                       className="mt-3 flex items-center gap-2 text-xs font-mono text-emerald-accent bg-emerald-glow p-3 rounded border border-emerald-accent/20"
                     >
-                      <CheckCircle className="h-4.5 w-4.5" />
+                      <CheckCircle className="h-4.5 w-4.5 shrink-0" />
                       <span>Thank you, Syed will get back to you shortly!</span>
+                    </motion.div>
+                  )}
+                  {errorMessage && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 10 }}
+                      className="mt-3 flex items-center gap-2 text-xs font-mono text-red-500 dark:text-red-400 bg-red-500/10 p-3 rounded border border-red-500/25"
+                    >
+                      <AlertCircle className="h-4.5 w-4.5 shrink-0" />
+                      <span>{errorMessage}</span>
                     </motion.div>
                   )}
                 </AnimatePresence>
