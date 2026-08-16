@@ -18,7 +18,7 @@ export default function Achievements() {
             <ScrollReveal key={index} delay={index * 100}>
               <div className="p-6 rounded-lg border border-border-primary hover:border-border-hover bg-bg-page transition-all duration-300 hover:shadow-lg">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent flex items-center justify-center mt-1">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent flex items-center justify-center">
                     <span className="text-white font-bold text-sm">★</span>
                   </div>
                   <p className="text-txt-medium text-lg leading-relaxed">{achievement}</p>

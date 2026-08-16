@@ -1,6 +1,13 @@
 import ScrollReveal from "./ScrollReveal";
 import { portfolioData } from "../data";
-import { Cpu, Code2, Database, BrainCircuit, ExternalLink } from "lucide-react";
+import {
+  Blocks,
+  Code2,
+  BrainCircuit,
+  Cloud,
+  Cpu,
+  Database,
+} from "lucide-react";
 
 export default function About() {
   // Mapping categories to nice technical icons
@@ -9,29 +16,38 @@ export default function About() {
       case 0:
         return <Code2 className="h-5 w-5 text-emerald-accent" />;
       case 1:
-        return <Cpu className="h-5 w-5 text-emerald-accent" />;
+        return <Blocks className="h-5 w-5 text-emerald-accent" />;
       case 2:
-        return <Database className="h-5 w-5 text-emerald-accent" />;
+        return <Cpu className="h-5 w-5 text-emerald-accent" />;
       case 3:
-        return <Cpu className="h-5 w-5 text-electric-blue" />;
-      default:
+        return <Database className="h-5 w-5 text-emerald-accent" />;
+      case 4:
+        return <Cloud className="h-5 w-5 text-emerald-accent" />;
+      case 5:
         return <BrainCircuit className="h-5 w-5 text-emerald-accent" />;
+      default:
+        return <Cpu className="h-5 w-5 text-emerald-accent" />;
     }
   };
 
   return (
-    <section id="about" className="max-w-7xl mx-auto px-6 md:px-12 py-16 lg:py-24 border-t border-border-custom/50">
+    <section
+      id="about"
+      className="max-w-7xl mx-auto px-6 md:px-12 py-16 lg:py-24 border-t border-border-custom/50"
+    >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         {/* Left Indicator Column */}
         <div className="lg:col-span-4 lg:sticky lg:top-28 lg:h-fit">
           <ScrollReveal direction="left">
             <div className="flex items-center gap-3">
-              <span className="font-mono text-sm font-semibold text-emerald-accent">01 /</span>
+              <span className="font-mono text-sm font-semibold text-emerald-accent">
+                01 /
+              </span>
               <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight text-txt-high">
                 About Me
               </h2>
             </div>
-            
+
             {/* Minimal decorator list of highlights */}
             <div className="mt-8 space-y-4 text-xs font-mono text-txt-low hidden lg:block">
               <div className="flex gap-2">
@@ -55,7 +71,10 @@ export default function About() {
           <ScrollReveal direction="up" delay={0.1}>
             <div className="space-y-6">
               {portfolioData.bio.map((para, i) => (
-                <p key={i} className="text-base md:text-lg text-txt-mid leading-relaxed text-justify">
+                <p
+                  key={i}
+                  className="text-base md:text-lg text-txt-mid leading-relaxed text-justify"
+                >
                   {para}
                 </p>
               ))}
@@ -69,7 +88,7 @@ export default function About() {
                 <Cpu className="h-4 w-4 text-emerald-accent" />
                 Technical Stack & Capabilities
               </h3>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {portfolioData.skills.map((cat, i) => (
                   <div
