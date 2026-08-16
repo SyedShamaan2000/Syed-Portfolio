@@ -3,8 +3,7 @@ export const portfolioData = {
   title: "Full Stack Developer",
   subtitle: "MERN Stack • Cloud & Serverless (AWS) • AI/LLM Integration",
   bio: [
-    "Full Stack Developer with expertise in the MERN stack, API design, and secure, scalable web applications. Experienced in Stripe payment integration, PostgreSQL database management, Docker containerization, serverless deployment on AWS (Lambda, API Gateway), and web security best practices.",
-    "Skilled in building Retrieval-Augmented Generation (RAG) pipelines and integrating LLM APIs (OpenAI, Gemini) for intelligent features. Adept at collaborating in agile teams to deliver reliable, production-ready software. Based in Hyderabad, I design and optimize scalable systems using modern development tools and best practices.",
+    "Full Stack Developer with expertise in the MERN stack, API design, and secure, scalable web applications. Experienced in Stripe payment integration, PostgreSQL database management, Docker containerization, serverless deployment on AWS (Lambda, API Gateway), and web security best practices. Skilled in building Retrieval-Augmented Generation (RAG) pipelines and integrating LLM APIs (OpenAI, Gemini) for intelligent features. Adept at collaborating in agile teams to deliver reliable, production-ready software. Based in Hyderabad, I design and optimize scalable systems using modern development tools and best practices.",
   ],
   avatarUrl: "photo.jpg",
   resumeUrl: "#",

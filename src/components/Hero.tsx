@@ -38,7 +38,7 @@ export default function Hero({ onOpenResume }: HeroProps) {
 
           <ScrollReveal direction="up" delay={0.3}>
             <p className="font-sans text-lg md:text-xl text-txt-mid mt-6 max-w-2xl leading-relaxed">
-              Full Stack Developer | MERN | API Design. Crafting scalable architectures and seamless user experiences with precision engineering.
+              Full Stack Developer | Cloud & Serverless (AWS) | AI/LLM Integration. Building scalable architectures, RAG pipelines, and production-ready software with precision engineering.
             </p>
           </ScrollReveal>
 
