@@ -83,7 +83,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                     Peerzada Syed Shamaan Hussaini
                   </h1>
                   <p className="text-emerald-700 font-medium tracking-wide mt-1 text-sm">
-                    Full Stack Developer • Hyderabad, Telangana
+                    Full Stack Developer | Cloud & Serverless (AWS) | AI/LLM Integration
                   </p>
 
                   {/* Digital labels stack */}
@@ -111,7 +111,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                 {/* Brief Summary */}
                 <div className="py-4">
                   <p className="text-zinc-700 text-justify leading-relaxed">
-                    Full Stack Developer with expertise in the MERN stack, API design, and secure, scalable web applications. Experienced in Stripe payment integration, PostgreSQL database management, Docker containerization, and implementing web security best practices. Familiar with LLM integration for intelligent features and performance optimization. Adept at collaborating in agile teams to deliver reliable, production-ready software.
+                    Full Stack Developer with expertise in the MERN stack, API design, and secure, scalable web applications. Experienced in Stripe payment integration, PostgreSQL database management, Docker containerization, serverless deployment on AWS (Lambda, API Gateway), and web security best practices. Skilled in building Retrieval-Augmented Generation (RAG) pipelines and integrating LLM APIs (OpenAI, Gemini) for intelligent features. Adept at collaborating in agile teams to deliver reliable, production-ready software.
                   </p>
                 </div>
 
@@ -128,13 +128,19 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                       <strong className="text-zinc-900 block">Frameworks & Libraries:</strong> React, Redux, Tailwind CSS, Material UI, FastAPI, Streamlit
                     </div>
                     <div>
-                      <strong className="text-zinc-900 block">Backend & Systems:</strong> Node.js, Express.js, API Gateway, RESTful API Development, Server-Side Logic, Data Security
+                      <strong className="text-zinc-900 block">Backend & Serverless:</strong> Node.js, Express.js, AWS Lambda, API Gateway, Serverless Framework, RESTful API Development, Server-Side Logic, Data Security
                     </div>
                     <div>
-                      <strong className="text-zinc-900 block">Databases & DevOps:</strong> MongoDB, PostgreSQL, Firebase, Docker, GitHub Actions, Git/GitHub, CI/CD, Netlify
+                      <strong className="text-zinc-900 block">Databases & Vector Stores:</strong> MongoDB, PostgreSQL, Firebase, Neon (Serverless Postgres), Vector Databases
+                    </div>
+                    <div>
+                      <strong className="text-zinc-900 block">Cloud & DevOps:</strong> AWS, Docker, GitHub Actions, CI/CD Pipelines, Git/GitHub, Netlify
+                    </div>
+                    <div>
+                      <strong className="text-zinc-900">AI/LLM & RAG:</strong> OpenAI API, Gemini API, Retrieval-Augmented Generation (RAG), Document Ingestion Pipelines, Prompt Engineering
                     </div>
                     <div className="sm:col-span-2">
-                      <strong className="text-zinc-900">API Integration:</strong> Expertise in integrating AI-driven APIs (OpenAI, Gemini), Stripe checkout models, Payment triggers
+                      <strong className="text-zinc-900">Soft Skills:</strong> Communication, Teamwork, Collaboration, Problem Solving, Critical Thinking, Time & Project Management, Adaptability, Continuous Learning
                     </div>
                   </div>
                 </div>
@@ -154,7 +160,8 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                         </div>
                         <span className="text-emerald-700 font-mono text-[11px] whitespace-nowrap">Dec 2024 - Present</span>
                       </div>
-                      <p className="text-[10px] text-zinc-500 italic mb-1.5">Hyderabad, India | Texas, USA</p>
+                      <p className="text-[10px] text-zinc-500 italic mb-1.5">Hyderabad, India / Texas, USA</p>
+                      <p className="text-[10px] text-zinc-600 font-medium mb-1.5">Product: lotuspetal.ai — AI-powered proposal & capture management software for GovCon and commercial contracting teams</p>
                       <ul className="list-disc list-outside pl-4 space-y-1 text-zinc-700 text-[11px] sm:text-xs">
                         <li>Built and optimized React UI components for 5+ features, improving performance and usability and reducing unnecessary re-renders by ~25%.</li>
                         <li>Created scalable FastAPI backend services with structured validation and error handling, delivering 10+ APIs supporting real-time client consumption.</li>
@@ -189,13 +196,22 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                   </h2>
                   <div className="space-y-2.5 text-zinc-700 text-[11px] sm:text-xs">
                     <p>
-                      <strong className="text-zinc-900">BudgetBuddy (Finance Tracking and Budgeting Web App):</strong> Developed a comprehensive budgeting tool using the MERN stack with Gemini API integration for personalized financial advice.
+                      <strong className="text-zinc-900">Serverless REST API on AWS (Node.js, Express, Serverless Framework):</strong> Designed and deployed a serverless Express.js REST API on AWS Lambda using Serverless Framework and API Gateway. Connected to Neon serverless PostgreSQL for scalable data persistence. Configured IAM roles and automated CI/CD workflows with GitHub Actions.
                     </p>
                     <p>
-                      <strong className="text-zinc-900">AI-ChatLingo (Language Learning Web App):</strong> Architected user authentication and AI-powered chatbot interactions, utilizing the MERN stack and Gemini API. Delivered responsive UI and optimized performance across devices.
+                      <strong className="text-zinc-900">Simple RAG — Retrieval-Augmented Generation Pipeline (Python, FastAPI):</strong> Built a RAG system with FastAPI backend, Pydantic validation, and Dockerized PostgreSQL vector store. Developed document ingestion pipeline for chunking, embedding, and indexing. Implemented query interface for grounded LLM responses.
                     </p>
                     <p>
-                      <strong className="text-zinc-900">TaskTrackr (Task Manager Web App):</strong> Built a task management tool featuring user authentication, task editing, and deletion, prioritizing security and usability.
+                      <strong className="text-zinc-900">Job Tracker — Job Application Pipeline Tracker (MERN):</strong> Built full-stack tracking web app to manage applications through hiring pipeline. Implemented networking-contact records linked to companies with persistent filtering/search. Set up CI/CD with GitHub Actions and deployed on Vercel.
+                    </p>
+                    <p>
+                      <strong className="text-zinc-900">BudgetBuddy (Finance Tracking and Budgeting Web App):</strong> Collaborated in 3-person team to build budgeting tool using MERN stack with Gemini API for personalized financial advice. Implemented interactive spending visualizations with Chart.js.
+                    </p>
+                    <p>
+                      <strong className="text-zinc-900">AI-ChatLingo (Language Learning Web App):</strong> Architected user authentication and AI-powered chatbot interactions using MERN stack and Gemini API. Delivered responsive UI optimized for all devices.
+                    </p>
+                    <p>
+                      <strong className="text-zinc-900">TaskTrackr (Task Manager Web App):</strong> Built task management tool featuring user authentication, task editing/deletion, prioritizing security and usability with minimalist design.
                     </p>
                   </div>
                 </div>
