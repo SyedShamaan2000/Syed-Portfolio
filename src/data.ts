@@ -3,10 +3,10 @@ import { PortfolioData } from "./types";
 export const portfolioData: PortfolioData = {
   name: "Peerzada Syed Shamaan Hussaini",
   title: "Full Stack Developer",
-  subtitle: "MERN Stack • API Design • Intelligent Software",
+  subtitle: "MERN Stack • Cloud & Serverless (AWS) • AI/LLM Integration",
   bio: [
-    "I am a Full Stack Developer specializing in the MERN stack, bridging the gap between complex backend systems and intuitive user interfaces. My approach is rooted in technical precision, clean code, and high-performance engineering.",
-    "Driven by modern development tools and minimalist aesthetics, I design and optimize scalable systems. Based in Hyderabad, I have engineered custom features that reduced re-renders, deployed Docker-based pipelines, integrated secure payment gateways, and built AI-augmented platforms."
+    "Full Stack Developer with expertise in the MERN stack, API design, and secure, scalable web applications. Experienced in Stripe payment integration, PostgreSQL database management, Docker containerization, serverless deployment on AWS (Lambda, API Gateway), and web security best practices.",
+    "Skilled in building Retrieval-Augmented Generation (RAG) pipelines and integrating LLM APIs (OpenAI, Gemini) for intelligent features. Adept at collaborating in agile teams to deliver reliable, production-ready software. Based in Hyderabad, I design and optimize scalable systems using modern development tools and best practices."
   ],
   avatarUrl: `${import.meta.env.BASE_URL}photo.jpg`,
   resumeUrl: "#", // will trigger modal
@@ -20,39 +20,44 @@ export const portfolioData: PortfolioData = {
   skills: [
     {
       title: "Languages",
-      skills: ["JavaScript", "TypeScript", "Python", "C", "C++"]
+      skills: ["JavaScript", "Python", "C", "C++"]
     },
     {
       title: "Frameworks & Libraries",
-      skills: ["React", "Redux Toolkit", "Tailwind CSS", "FastAPI", "Streamlit", "Material UI", "Express"]
+      skills: ["React", "Redux", "Tailwind CSS", "Material UI", "FastAPI", "Streamlit", "Express"]
     },
     {
-      title: "Backend & Systems",
-      skills: ["Node.js", "Express.js", "API Gateway", "REST APIs", "Data Security", "Server-Side Logic"]
+      title: "Backend & Serverless",
+      skills: ["Node.js", "Express.js", "AWS Lambda", "API Gateway", "Serverless Framework", "RESTful API Development", "Server-Side Logic", "Data Security"]
     },
     {
-      title: "Databases & DevOps",
-      skills: ["MongoDB", "PostgreSQL", "Firebase", "Docker", "GitHub Actions", "CI/CD Pipelines", "Netlify"]
+      title: "Databases & Vector Stores",
+      skills: ["MongoDB", "PostgreSQL", "Firebase", "Neon (Serverless Postgres)", "Vector Databases"]
     },
     {
-      title: "AI & Integrations",
-      skills: ["Gemini API", "OpenAI API", "Stripe API", "LLM Workflows", "Vector Embeddings"]
+      title: "Cloud & DevOps",
+      skills: ["AWS", "Docker", "GitHub Actions", "CI/CD Pipelines", "Git/GitHub", "Netlify"]
+    },
+    {
+      title: "AI/LLM & RAG",
+      skills: ["OpenAI API", "Gemini API", "Retrieval-Augmented Generation (RAG)", "Document Ingestion Pipelines", "Prompt Engineering"]
     }
   ],
   experience: [
     {
       role: "Full Stack Developer",
       company: "Sakesh InfoTech Pvt Ltd",
-      location: "Hyderabad, India | Texas, USA",
+      location: "Hyderabad, India / Texas, USA",
       period: "Dec 2024 - Present",
       points: [
-        "Built and optimized React UI components for over 5 major features, reducing redundant rendering cycles by approximately 25%.",
-        "Created high-throughput FastAPI backend microservices with fully validated payloads, supplying 10+ robust APIs supporting real-time traffic.",
-        "Managed relational and non-relational database architectures across live and sandbox servers, ensuring structured queries, indices, and secure weekly backups.",
-        "Integrated advanced machine learning pipelines to extract, summarize, and synthesize multi-page DOCX files, auto-rendering them into responsive slideshow presentation previews.",
-        "Engineered full Stripe API payment triggers, linking products and price codes seamlessly on frontend client views and backend verification routes."
+        "Built and optimized React UI components for 5+ features, improving performance and usability and reducing unnecessary re-renders by ~25%.",
+        "Created scalable FastAPI backend services with structured validation and error handling, delivering 10+ APIs supporting real-time client consumption.",
+        "Managed application databases across development and production environments, handling thousands of records while ensuring data integrity, backups, and optimized queries.",
+        "Integrated LLM workflows to summarize multi-page DOCX documents and dynamically generate PPTX presentations.",
+        "Configured and integrated Stripe price IDs into frontend and backend services, enabling 1 new pricing tier within the existing payment system.",
+        "Used Dockerized workflows to support deployments and maintenance."
       ],
-      skills: ["React", "Node.js", "FastAPI", "MongoDB", "Stripe", "Docker"]
+      skills: ["React", "FastAPI", "PostgreSQL", "Stripe", "Docker", "LLM Integration"]
     },
     {
       role: "Remote Software Developer Intern",
@@ -60,29 +65,91 @@ export const portfolioData: PortfolioData = {
       location: "Pune, India",
       period: "Jan 2024 - Feb 2024",
       points: [
-        "Engineered an automated language translator leveraging the GPT engines to preserve visual layout states while translating multilingual documents.",
-        "Created accessible style sheets and responsive page sections with clean, predictable breakpoints."
+        "Engineered a language translation tool using the OpenAI API, enhancing user satisfaction and translation accuracy."
       ],
-      skills: ["React", "CSS Variables", "OpenAI API", "UI Optimization"]
+      skills: ["React", "OpenAI API", "Translation Tools"]
     }
   ],
   projects: [
     {
+      title: "Serverless REST API on AWS",
+      year: "2024",
+      description: "Designed and deployed a serverless Express.js REST API on AWS Lambda using the Serverless Framework and API Gateway, eliminating server management overhead. Connected to a Neon serverless PostgreSQL database for scalable, low-maintenance data persistence.",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuADdr6SofZ9zZsLZkMG654XTKpcYYTV2hU2IvSpI5SSQbl9eNNmOnCFzk9MumqrmyHgUkTG9vioOUKGxVDe2tIyPRB4pUaR8LGOHPf-u4Y47dYMakxBwOee96RItr4RgBtMNO2EVwyLKiOXzAyStHYGdZZ0dpW9yxQ1yu2n2ez1nr7jBY7MzrStlLsZcpnoX8eq4Ng6SkwwrbwQd9nAbMeGoe4lkmFnr5JZDL2jM7fxTZRVD3-wgzgYk2KR3N3HUsDFOHQnONMleszE",
+      tags: ["AWS Lambda", "Express.js", "Serverless Framework", "PostgreSQL", "API Gateway"],
+      githubUrl: "https://github.com/SyedShamaan2000/serverless-nodejs-api-yt",
+      demoUrl: "#",
+      fullDetails: {
+        challenge: "Traditional server-based APIs require constant infrastructure management, scaling overhead, and higher operational costs.",
+        solutions: [
+          "Designed serverless architecture using AWS Lambda and API Gateway for automatic scaling and pay-per-use pricing.",
+          "Connected to Neon serverless PostgreSQL database for reliable, low-maintenance data persistence.",
+          "Configured IAM roles, automated build/deploy workflows with GitHub Actions for continuous integration."
+        ],
+        outcomes: [
+          "Eliminated server management overhead and reduced operational costs significantly.",
+          "Enabled local emulation and rapid iteration using Serverless Offline plugin before cloud deployment."
+        ]
+      }
+    },
+    {
+      title: "Simple RAG",
+      year: "2024",
+      description: "Retrieval-Augmented Generation (RAG) Pipeline built with Python and FastAPI. Features a Dockerized PostgreSQL vector store for semantic search, document ingestion pipeline, and query interface for grounded LLM responses.",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuApHrJHDi5TN7TlmINofvHcctMU1Y_46zOmOZK-PZNxIuw3kvnYFN25-jDJopxTrQYK4-on4IVAMaJD558kIKuxfPa0TtF8Io1q9LAQ70wH-jTOvkxtTS7cHRX7hWVd6u_6BzSs88HD4xbFbLhYiMjjRHJliY1TGGHKtXcSYenSXtPq9LXAVBVjkHiwoQe1lCf0Gd1B6_t0NXH8a-DfHuC8-vJElrNgQi2KMI8N9SqgiRC6oc9O31GMYNUBA2nl6cXKnlED0xYhZhKd",
+      tags: ["Python", "FastAPI", "Vector Databases", "Docker", "RAG"],
+      githubUrl: "https://github.com/SyedShamaan2000/simple-rag",
+      demoUrl: "#",
+      fullDetails: {
+        challenge: "LLMs can hallucinate information when not grounded in actual data. Organizations need accurate, contextual responses based on their documents.",
+        solutions: [
+          "Built a Retrieval-Augmented Generation (RAG) system with FastAPI backend and Pydantic schema validation.",
+          "Developed document ingestion pipeline to chunk, embed, and index source documents for accurate context retrieval.",
+          "Implemented query interface that retrieves relevant context and augments LLM prompts for grounded responses."
+        ],
+        outcomes: [
+          "Enabled semantic search across document collections with high accuracy.",
+          "Reduced LLM hallucinations by providing grounded context for all responses."
+        ]
+      }
+    },
+    {
+      title: "Job Tracker",
+      year: "2024",
+      description: "Full-stack job-hunt tracking web app built with MERN stack to manage applications through the hiring pipeline. Features status tracking, priority settings, custom labels, and networking-contact records linked to companies.",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDMUxRrSPV3F7__qethW5pF_Xf6-2EdZN9tvfmle-SnJ9A3Fe10T9soo-7gARmBolT60YJov77ggO64vHauBWpRDb1_EjBrh-0E-OdzNqJ-dnCMzJuUUOAxjWps1DzMltUuQRPd87aoR89TSVpavLnut2ImBUX_POWs9KVZ1zQiOdOx9xbSgpeawh5degt_zeAqoPJUxhLbIHB_DDNf7_laNdtau6MuRFmrmWEr822QEPp-8BYySLowd0l8RO4aR99jocjXwBWfKBCs",
+      tags: ["MERN Stack", "MongoDB", "React", "Node.js", "GitHub Actions"],
+      githubUrl: "https://github.com/SyedShamaan2000/job-tracker",
+      demoUrl: "#",
+      fullDetails: {
+        challenge: "Job seekers struggle to organize and track multiple applications across different companies and stages of the hiring process.",
+        solutions: [
+          "Built a full-stack tracking application with persistent filtering and search across all saved data.",
+          "Implemented networking-contact records linked to companies for relationship management.",
+          "Set up CI/CD with GitHub Actions for automated testing and deployment."
+        ],
+        outcomes: [
+          "Enabled efficient job application pipeline management from Saved to Offer stage.",
+          "Deployed live on Vercel with automated workflows for continuous deployment."
+        ]
+      }
+    },
+    {
       title: "BudgetBuddy",
       year: "2024",
-      description: "AI-powered financial tracking and budgeting web application utilizing the Gemini API for smart, personalized spending breakdowns, and the MERN stack for robust multi-user transactional records.",
+      description: "AI-powered financial tracking and budgeting web application utilizing the Gemini API for smart, personalized spending breakdowns. Built with MERN stack for robust multi-user transactional records. Collaborated in a 3-person team.",
       image: "https://lh3.googleusercontent.com/aida-public/AB6AXuADdr6SofZ9zZsLZkMG654XTKpcYYTV2hU2IvSpI5SSQbl9eNNmOnCFzk9MumqrmyHgUkTG9vioOUKGxVDe2tIyPRB4pUaR8LGOHPf-u4Y47dYMakxBwOee96RItr4RgBtMNO2EVwyLKiOXzAyStHYGdZZ0dpW9yxQ1yu2n2ez1nr7jBY7MzrStlLsZcpnoX8eq4Ng6SkwwrbwQd9nAbMeGoe4lkmFnr5JZDL2jM7fxTZRVD3-wgzgYk2KR3N3HUsDFOHQnONMleszE",
-      tags: ["MERN Stack", "Gemini API", "Recharts", "Tailwind CSS"],
+      tags: ["MERN Stack", "Gemini API", "Chart.js", "Tailwind CSS"],
       githubUrl: "https://github.com/Shamaan3066/budget-buddy",
       demoUrl: "#",
       fullDetails: {
         challenge: "Managing irregular expenditures can be daunting. Users need simple logs aligned with smart analysis that categorizes spending logs dynamically.",
         solutions: [
-          "Crafted customized prompt engines for the Gemini Pro model to generate structural JSON budget reviews.",
-          "Engineered interactive dashboards with Recharts displaying real-time responsive analytics."
+          "Crafted customized prompt engines for Gemini API to generate structural JSON budget reviews.",
+          "Engineered interactive spending visualizations with Chart.js and animated UI backgrounds using React Particles."
         ],
         outcomes: [
-          "Enabled immediate budget categorization in sub-second times with Zero-Shot analysis.",
+          "Enabled immediate budget categorization with AI-powered personalized financial advice.",
           "Maintained fully secured client routes utilizing JWT tokenization workflows."
         ]
       }
@@ -90,38 +157,40 @@ export const portfolioData: PortfolioData = {
     {
       title: "AI-ChatLingo",
       year: "2024",
-      description: "Intelligent language acquisition and immersive interactive conversational practice tool powered by Gemini API, complete with contextual word corrections and conversational prompts.",
+      description: "Intelligent language learning web app powered by Gemini API. Architected user authentication and AI-powered chatbot interactions using MERN stack with a responsive, optimized UI.",
       image: "https://lh3.googleusercontent.com/aida-public/AB6AXuApHrJHDi5TN7TlmINofvHcctMU1Y_46zOmOZK-PZNxIuw3kvnYFN25-jDJopxTrQYK4-on4IVAMaJD558kIKuxfPa0TtF8Io1q9LAQ70wH-jTOvkxtTS7cHRX7hWVd6u_6BzSs88HD4xbFbLhYiMjjRHJliY1TGGHKtXcSYenSXtPq9LXAVBVjkHiwoQe1lCf0Gd1B6_t0NXH8a-DfHuC8-vJElrNgQi2KMI8N9SqgiRC6oc9O31GMYNUBA2nl6cXKnlED0xYhZhKd",
-      tags: ["React", "Express", "Python", "Gemini Pro"],
-      githubUrl: "https://github.com/Shamaan3066/AI-ChatLingo",
+      tags: ["MERN Stack", "Gemini API", "React", "Express"],
+      githubUrl: "https://github.com/SyedShamaan2000/AI-ChatLingo",
       demoUrl: "#",
       fullDetails: {
-        challenge: "Language pupils lack risk-free arenas to speak and test foreign speech structures with fluid corrections.",
+        challenge: "Language learners lack risk-free environments to practice conversational skills with real-time feedback and corrections.",
         solutions: [
-          "Developed an asynchronous chat server parsing and streaming conversations generated by LLM instances.",
-          "Integrated real-time pronunciation checking indices and inline grammatic corrections."
+          "Architected user authentication system with secure JWT-based session management.",
+          "Developed AI-powered chatbot interactions using Gemini API for contextual language practice."
         ],
         outcomes: [
-          "Increased overall dialogue retention scores while reducing chat response latencies."
+          "Delivered a responsive UI optimized across all devices for seamless learning experience.",
+          "Enabled immersive conversational practice with AI-powered corrections."
         ]
       }
     },
     {
       title: "TaskTrackr",
       year: "2023",
-      description: "High-contrast minimalist project orchestrator featuring streamlined workflow controls, responsive status states, customized JWT authorizations, and reliable user access lists.",
+      description: "Task management tool built with MERN stack featuring user authentication, task editing, deletion, and secure access controls. Prioritizes security and usability with a minimalist, responsive design.",
       image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDMUxRrSPV3F7__qethW5pF_Xf6-2EdZN9tvfmle-SnJ9A3Fe10T9soo-7gARmBolT60YJov77ggO64vHauBWpRDb1_EjBrh-0E-OdzNqJ-dnCMzJuUUOAxjWps1DzMltUuQRPd87aoR89TSVpavLnut2ImBUX_POWs9KVZ1zQiOdOx9xbSgpeawh5degt_zeAqoPJUxhLbIHB_DDNf7_laNdtau6MuRFmrmWEr822QEPp-8BYySLowd0l8RO4aR99jocjXwBWfKBCs",
-      tags: ["React.js", "Node.js", "MongoDB", "Redux Toolkit"],
-      githubUrl: "https://github.com/Shamaan3066/taskapp",
+      tags: ["MERN Stack", "React", "Node.js", "MongoDB"],
+      githubUrl: "https://github.com/SyedShamaan2000/taskapp",
       demoUrl: "#",
       fullDetails: {
-        challenge: "Traditional project managers are weighed down by heavy layout structures. Creative teams demand visual brevity and super responsive state flows.",
+        challenge: "Traditional task managers are weighed down by heavy interfaces. Teams need visual simplicity and responsive interactions for efficient task management.",
         solutions: [
-          "Programmed an optimized front-end with zero third-party render bloat, utilizing purely custom CSS transitions.",
-          "Employed JWT auth matrices to secure data at the resource-ID grain."
+          "Built an optimized front-end with custom CSS transitions and minimal dependencies.",
+          "Implemented JWT authentication to secure data at the resource-ID level."
         ],
         outcomes: [
-          "Reduced UI time-to-interactive down to instant clicks, bolstering positive reviews and work compliance."
+          "Delivered instant UI interactions and reduced time-to-interactive significantly.",
+          "Provided secure, intuitive task management for improved team collaboration."
         ]
       }
     }
@@ -148,5 +217,8 @@ export const portfolioData: PortfolioData = {
       location: "Hyderabad, India",
       cgpa: "9.2"
     }
+  ],
+  achievements: [
+    "Secured 1st Winner Place at a Hackathon conducted by MetLife Company"
   ]
 };

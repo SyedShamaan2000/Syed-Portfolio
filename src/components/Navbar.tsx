@@ -17,7 +17,7 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
       setScrolled(window.scrollY > 20);
 
       // Simple active link detection based on section scroll offset
-      const sections = ["about", "experience", "projects", "contact"];
+      const sections = ["about", "experience", "projects", "achievements", "contact"];
       const scrollPosition = window.scrollY + 120;
 
       for (const section of sections) {
@@ -56,6 +56,7 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
     { label: "About", id: "about" },
     { label: "Experience", id: "experience" },
     { label: "Projects", id: "projects" },
+    { label: "Achievements", id: "achievements" },
     { label: "Contact", id: "contact" },
   ];
 

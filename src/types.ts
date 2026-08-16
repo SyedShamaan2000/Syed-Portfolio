@@ -53,4 +53,5 @@ export interface PortfolioData {
   experience: ExperienceEntry[];
   projects: ProjectEntry[];
   education: EducationEntry[];
+  achievements?: string[];
 }
