@@ -7,7 +7,6 @@ interface ResumeModalProps {
 }
 
 export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
-
   const downloadPDFResume = () => {
     // Triggers a direct download of the PDF file hosted in your public folder
     const link = document.createElement("a");
@@ -50,7 +49,6 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                 <span className="font-mono text-sm font-semibold text-txt-high">
                   Syed_Shamaan_Resume_2026.pdf
                 </span>
-                <span className="text-xs text-txt-low hidden sm:inline">- A4 Printable Layout</span>
               </div>
 
               <div className="flex items-center gap-3">
@@ -76,14 +74,14 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
             <div className="flex-1 overflow-y-auto p-4 md:p-8 bg-zinc-800/85 dark:bg-slate-900/40 custom-scrollbar flex flex-col items-center">
               {/* Paper Sheet canvas container */}
               <div className="bg-white text-zinc-900 w-full max-w-[210mm] min-h-[297mm] mb-8 p-6 sm:p-12 shadow-2xl rounded border border-neutral-200 select-text relative font-sans text-xs sm:text-sm leading-relaxed shrink-0">
-
                 {/* Header Profile Section */}
                 <div className="text-center pb-6 border-b border-zinc-200">
                   <h1 className="text-xl sm:text-2xl font-bold font-display uppercase tracking-wider text-black">
                     Peerzada Syed Shamaan Hussaini
                   </h1>
                   <p className="text-emerald-700 font-medium tracking-wide mt-1 text-sm">
-                    Full Stack Developer | Cloud & Serverless (AWS) | AI/LLM Integration
+                    Full Stack Developer | Cloud & Serverless (AWS) | AI/LLM
+                    Integration
                   </p>
 
                   {/* Digital labels stack */}
@@ -111,7 +109,15 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                 {/* Brief Summary */}
                 <div className="py-4">
                   <p className="text-zinc-700 text-justify leading-relaxed">
-                    Full Stack Developer with expertise in the MERN stack, API design, and secure, scalable web applications. Experienced in Stripe payment integration, PostgreSQL database management, Docker containerization, serverless deployment on AWS (Lambda, API Gateway), and web security best practices. Skilled in building Retrieval-Augmented Generation (RAG) pipelines and integrating LLM APIs (OpenAI, Gemini) for intelligent features. Adept at collaborating in agile teams to deliver reliable, production-ready software.
+                    Full Stack Developer with expertise in the MERN stack, API
+                    design, and secure, scalable web applications. Experienced
+                    in Stripe payment integration, PostgreSQL database
+                    management, Docker containerization, serverless deployment
+                    on AWS (Lambda, API Gateway), and web security best
+                    practices. Skilled in building Retrieval-Augmented
+                    Generation (RAG) pipelines and integrating LLM APIs (OpenAI,
+                    Gemini) for intelligent features. Adept at collaborating in
+                    agile teams to deliver reliable, production-ready software.
                   </p>
                 </div>
 
@@ -122,25 +128,50 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                   </h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 text-zinc-700 text-[11px] sm:text-xs">
                     <div>
-                      <strong className="text-zinc-900 block">Languages:</strong> JavaScript, Python, C, C++
+                      <strong className="text-zinc-900 block">
+                        Languages:
+                      </strong>{" "}
+                      JavaScript, Python, C, C++
                     </div>
                     <div>
-                      <strong className="text-zinc-900 block">Frameworks & Libraries:</strong> React, Redux, Tailwind CSS, Material UI, FastAPI, Streamlit
+                      <strong className="text-zinc-900 block">
+                        Frameworks & Libraries:
+                      </strong>{" "}
+                      React, Redux, Tailwind CSS, Material UI, FastAPI,
+                      Streamlit
                     </div>
                     <div>
-                      <strong className="text-zinc-900 block">Backend & Serverless:</strong> Node.js, Express.js, AWS Lambda, API Gateway, Serverless Framework, RESTful API Development, Server-Side Logic, Data Security
+                      <strong className="text-zinc-900 block">
+                        Backend & Serverless:
+                      </strong>{" "}
+                      Node.js, Express.js, AWS Lambda, API Gateway, Serverless
+                      Framework, RESTful API Development, Server-Side Logic,
+                      Data Security
                     </div>
                     <div>
-                      <strong className="text-zinc-900 block">Databases & Vector Stores:</strong> MongoDB, PostgreSQL, Firebase, Neon (Serverless Postgres), Vector Databases
+                      <strong className="text-zinc-900 block">
+                        Databases & Vector Stores:
+                      </strong>{" "}
+                      MongoDB, PostgreSQL, Firebase, Neon (Serverless Postgres),
+                      Vector Databases
                     </div>
                     <div>
-                      <strong className="text-zinc-900 block">Cloud & DevOps:</strong> AWS, Docker, GitHub Actions, CI/CD Pipelines, Git/GitHub, Netlify
+                      <strong className="text-zinc-900 block">
+                        Cloud & DevOps:
+                      </strong>{" "}
+                      AWS, Docker, GitHub Actions, CI/CD Pipelines, Git/GitHub,
+                      Netlify
                     </div>
                     <div>
-                      <strong className="text-zinc-900">AI/LLM & RAG:</strong> OpenAI API, Gemini API, Retrieval-Augmented Generation (RAG), Document Ingestion Pipelines, Prompt Engineering
+                      <strong className="text-zinc-900">AI/LLM & RAG:</strong>{" "}
+                      OpenAI API, Gemini API, Retrieval-Augmented Generation
+                      (RAG), Document Ingestion Pipelines, Prompt Engineering
                     </div>
                     <div className="sm:col-span-2">
-                      <strong className="text-zinc-900">Soft Skills:</strong> Communication, Teamwork, Collaboration, Problem Solving, Critical Thinking, Time & Project Management, Adaptability, Continuous Learning
+                      <strong className="text-zinc-900">Soft Skills:</strong>{" "}
+                      Communication, Teamwork, Collaboration, Problem Solving,
+                      Critical Thinking, Time & Project Management,
+                      Adaptability, Continuous Learning
                     </div>
                   </div>
                 </div>
@@ -154,36 +185,87 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                     <div>
                       <div className="flex justify-between items-start font-semibold text-zinc-900">
                         <div>
-                          <span className="text-black text-sm">Full Stack Developer</span>
-                          <span className="mx-1.5 text-zinc-400 font-normal">|</span>
-                          <span className="text-zinc-700 font-medium">Sakesh InfoTech Pvt Ltd</span>
+                          <span className="text-black text-sm">
+                            Full Stack Developer
+                          </span>
+                          <span className="mx-1.5 text-zinc-400 font-normal">
+                            |
+                          </span>
+                          <span className="text-zinc-700 font-medium">
+                            Sakesh InfoTech Pvt Ltd
+                          </span>
                         </div>
-                        <span className="text-emerald-700 font-mono text-[11px] whitespace-nowrap">Dec 2024 - Present</span>
+                        <span className="text-emerald-700 font-mono text-[11px] whitespace-nowrap">
+                          Dec 2024 - Present
+                        </span>
                       </div>
-                      <p className="text-[10px] text-zinc-500 italic mb-1.5">Hyderabad, India / Texas, USA</p>
-                      <p className="text-[10px] text-zinc-600 font-medium mb-1.5">Product: lotuspetal.ai — AI-powered proposal & capture management software for GovCon and commercial contracting teams</p>
+                      <p className="text-[10px] text-zinc-500 italic mb-1.5">
+                        Hyderabad, India / Texas, USA
+                      </p>
+                      <p className="text-[10px] text-zinc-600 font-medium mb-1.5">
+                        Product: lotuspetal.ai — AI-powered proposal & capture
+                        management software for GovCon and commercial
+                        contracting teams
+                      </p>
                       <ul className="list-disc list-outside pl-4 space-y-1 text-zinc-700 text-[11px] sm:text-xs">
-                        <li>Built and optimized React UI components for 5+ features, improving performance and usability and reducing unnecessary re-renders by ~25%.</li>
-                        <li>Created scalable FastAPI backend services with structured validation and error handling, delivering 10+ APIs supporting real-time client consumption.</li>
-                        <li>Managed application databases across development and production environments, handling thousands of records while ensuring data integrity, backups, and optimized queries.</li>
-                        <li>Integrated LLM workflows to summarize multi-page DOCX documents and dynamically generate PPTX presentations.</li>
-                        <li>Configured and integrated Stripe price IDs into frontend and backend services, enabling 1 new pricing tier within the existing payment system.</li>
-                        <li>Used Dockerized workflows to support deployments and maintenance.</li>
+                        <li>
+                          Built and optimized React UI components for 5+
+                          features, improving performance and usability and
+                          reducing unnecessary re-renders by ~25%.
+                        </li>
+                        <li>
+                          Created scalable FastAPI backend services with
+                          structured validation and error handling, delivering
+                          10+ APIs supporting real-time client consumption.
+                        </li>
+                        <li>
+                          Managed application databases across development and
+                          production environments, handling thousands of records
+                          while ensuring data integrity, backups, and optimized
+                          queries.
+                        </li>
+                        <li>
+                          Integrated LLM workflows to summarize multi-page DOCX
+                          documents and dynamically generate PPTX presentations.
+                        </li>
+                        <li>
+                          Configured and integrated Stripe price IDs into
+                          frontend and backend services, enabling 1 new pricing
+                          tier within the existing payment system.
+                        </li>
+                        <li>
+                          Used Dockerized workflows to support deployments and
+                          maintenance.
+                        </li>
                       </ul>
                     </div>
 
                     <div>
                       <div className="flex justify-between items-start font-semibold text-zinc-900">
                         <div>
-                          <span className="text-black text-sm">Remote Software Developer Intern</span>
-                          <span className="mx-1.5 text-zinc-400 font-normal">|</span>
-                          <span className="text-zinc-700 font-medium">CodeClause</span>
+                          <span className="text-black text-sm">
+                            Remote Software Developer Intern
+                          </span>
+                          <span className="mx-1.5 text-zinc-400 font-normal">
+                            |
+                          </span>
+                          <span className="text-zinc-700 font-medium">
+                            CodeClause
+                          </span>
                         </div>
-                        <span className="text-emerald-700 font-mono text-[11px] whitespace-nowrap">Jan 2024 - Feb 2024</span>
+                        <span className="text-emerald-700 font-mono text-[11px] whitespace-nowrap">
+                          Jan 2024 - Feb 2024
+                        </span>
                       </div>
-                      <p className="text-[10px] text-zinc-500 italic mb-1.5">Pune, India</p>
+                      <p className="text-[10px] text-zinc-500 italic mb-1.5">
+                        Pune, India
+                      </p>
                       <ul className="list-disc list-outside pl-4 space-y-1 text-zinc-700 text-[11px] sm:text-xs">
-                        <li>Engineered a language translation tool with OpenAI API, enhancing user satisfaction and translation accuracy.</li>
+                        <li>
+                          Engineered a language translation tool with OpenAI
+                          API, enhancing user satisfaction and translation
+                          accuracy.
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -196,22 +278,61 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                   </h2>
                   <div className="space-y-2.5 text-zinc-700 text-[11px] sm:text-xs">
                     <p>
-                      <strong className="text-zinc-900">Serverless REST API on AWS (Node.js, Express, Serverless Framework):</strong> Designed and deployed a serverless Express.js REST API on AWS Lambda using Serverless Framework and API Gateway. Connected to Neon serverless PostgreSQL for scalable data persistence. Configured IAM roles and automated CI/CD workflows with GitHub Actions.
+                      <strong className="text-zinc-900">
+                        Serverless REST API on AWS (Node.js, Express, Serverless
+                        Framework):
+                      </strong>{" "}
+                      Designed and deployed a serverless Express.js REST API on
+                      AWS Lambda using Serverless Framework and API Gateway.
+                      Connected to Neon serverless PostgreSQL for scalable data
+                      persistence. Configured IAM roles and automated CI/CD
+                      workflows with GitHub Actions.
                     </p>
                     <p>
-                      <strong className="text-zinc-900">Simple RAG — Retrieval-Augmented Generation Pipeline (Python, FastAPI):</strong> Built a RAG system with FastAPI backend, Pydantic validation, and Dockerized PostgreSQL vector store. Developed document ingestion pipeline for chunking, embedding, and indexing. Implemented query interface for grounded LLM responses.
+                      <strong className="text-zinc-900">
+                        Simple RAG — Retrieval-Augmented Generation Pipeline
+                        (Python, FastAPI):
+                      </strong>{" "}
+                      Built a RAG system with FastAPI backend, Pydantic
+                      validation, and Dockerized PostgreSQL vector store.
+                      Developed document ingestion pipeline for chunking,
+                      embedding, and indexing. Implemented query interface for
+                      grounded LLM responses.
                     </p>
                     <p>
-                      <strong className="text-zinc-900">Job Tracker — Job Application Pipeline Tracker (MERN):</strong> Built full-stack tracking web app to manage applications through hiring pipeline. Implemented networking-contact records linked to companies with persistent filtering/search. Set up CI/CD with GitHub Actions and deployed on Vercel.
+                      <strong className="text-zinc-900">
+                        Job Tracker — Job Application Pipeline Tracker (MERN):
+                      </strong>{" "}
+                      Built full-stack tracking web app to manage applications
+                      through hiring pipeline. Implemented networking-contact
+                      records linked to companies with persistent
+                      filtering/search. Set up CI/CD with GitHub Actions and
+                      deployed on Vercel.
                     </p>
                     <p>
-                      <strong className="text-zinc-900">BudgetBuddy (Finance Tracking and Budgeting Web App):</strong> Collaborated in 3-person team to build budgeting tool using MERN stack with Gemini API for personalized financial advice. Implemented interactive spending visualizations with Chart.js.
+                      <strong className="text-zinc-900">
+                        BudgetBuddy (Finance Tracking and Budgeting Web App):
+                      </strong>{" "}
+                      Collaborated in 3-person team to build budgeting tool
+                      using MERN stack with Gemini API for personalized
+                      financial advice. Implemented interactive spending
+                      visualizations with Chart.js.
                     </p>
                     <p>
-                      <strong className="text-zinc-900">AI-ChatLingo (Language Learning Web App):</strong> Architected user authentication and AI-powered chatbot interactions using MERN stack and Gemini API. Delivered responsive UI optimized for all devices.
+                      <strong className="text-zinc-900">
+                        AI-ChatLingo (Language Learning Web App):
+                      </strong>{" "}
+                      Architected user authentication and AI-powered chatbot
+                      interactions using MERN stack and Gemini API. Delivered
+                      responsive UI optimized for all devices.
                     </p>
                     <p>
-                      <strong className="text-zinc-900">TaskTrackr (Task Manager Web App):</strong> Built task management tool featuring user authentication, task editing/deletion, prioritizing security and usability with minimalist design.
+                      <strong className="text-zinc-900">
+                        TaskTrackr (Task Manager Web App):
+                      </strong>{" "}
+                      Built task management tool featuring user authentication,
+                      task editing/deletion, prioritizing security and usability
+                      with minimalist design.
                     </p>
                   </div>
                 </div>
@@ -224,21 +345,37 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                   <div className="space-y-3">
                     <div className="flex justify-between items-start sm:items-center text-zinc-800 font-semibold gap-2">
                       <div>
-                        <span className="text-zinc-900 font-bold block sm:inline">Bachelor of Engineering (Computer Science)</span>
-                        <span className="text-zinc-600 font-normal block sm:inline sm:before:content-['_|_']">Deccan College of Engineering Tech</span>
+                        <span className="text-zinc-900 font-bold block sm:inline">
+                          Bachelor of Engineering (Computer Science)
+                        </span>
+                        <span className="text-zinc-600 font-normal block sm:inline sm:before:content-['_|_']">
+                          Deccan College of Engineering Tech
+                        </span>
                       </div>
-                      <span className="text-zinc-500 font-mono text-[10px]">2020 - 2024</span>
+                      <span className="text-zinc-500 font-mono text-[10px]">
+                        2020 - 2024
+                      </span>
                     </div>
-                    <p className="text-[10px] sm:text-[11px] text-zinc-500 mt-[-6px]">Osmania University, Hyderabad • CGPA: 7.43</p>
+                    <p className="text-[10px] sm:text-[11px] text-zinc-500 mt-[-6px]">
+                      Osmania University, Hyderabad • CGPA: 7.43
+                    </p>
 
                     <div className="flex justify-between items-start sm:items-center text-zinc-800 font-semibold gap-2 mt-2">
                       <div>
-                        <span className="text-zinc-900 font-bold block sm:inline">Intermediate Schooling (MPC)</span>
-                        <span className="text-zinc-600 font-normal block sm:inline sm:before:content-['_|_']">MS Junior College</span>
+                        <span className="text-zinc-900 font-bold block sm:inline">
+                          Intermediate Schooling (MPC)
+                        </span>
+                        <span className="text-zinc-600 font-normal block sm:inline sm:before:content-['_|_']">
+                          MS Junior College
+                        </span>
                       </div>
-                      <span className="text-zinc-500 font-mono text-[10px]">2018 - 2020</span>
+                      <span className="text-zinc-500 font-mono text-[10px]">
+                        2018 - 2020
+                      </span>
                     </div>
-                    <p className="text-[10px] sm:text-[11px] text-zinc-500 mt-[-6px]">Hyderabad, India • CGPA: 9.53</p>
+                    <p className="text-[10px] sm:text-[11px] text-zinc-500 mt-[-6px]">
+                      Hyderabad, India • CGPA: 9.53
+                    </p>
                   </div>
                 </div>
 
@@ -249,13 +386,17 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                   </h2>
                   <div className="flex items-center gap-2 text-zinc-700">
                     <Award className="h-4 w-4 text-emerald-700 shrink-0" />
-                    <span>Secured 1st Winner Place at a Hackathon conducted by MetLife Company.</span>
+                    <span>
+                      Secured 1st Winner Place at a Hackathon conducted by
+                      MetLife Company.
+                    </span>
                   </div>
                 </div>
 
                 {/* Footer Signature watermark */}
                 <div className="text-center text-[10px] text-zinc-400 mt-8 pt-4 border-t border-zinc-100">
-                  Document electronically verified • Peerzada Syed Shamaan Hussaini
+                  Document electronically verified • Peerzada Syed Shamaan
+                  Hussaini
                 </div>
               </div>
             </div>
