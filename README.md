@@ -1,21 +1,23 @@
-# Testing Google AI Studio App
+# Peerzada Syed Shamaan Hussaini - Portfolio
 
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+## Overview
 
-# Run and deploy your AI Studio app
+This is the personal portfolio website of Peerzada Syed Shamaan Hussaini, a Full Stack Developer specializing in the MERN stack, cloud/serverless technologies (AWS), and AI/LLM integration. The site showcases professional experience, projects, skills, and achievements through an interactive, responsive interface.
 
-This contains everything you need to run your app locally.
-https://ai.studio/apps/63f80ab0-b77c-48cc-a2be-f9fae4dbfe4e
+## Features
 
-## Run Locally
+- **Modern UI/UX**: Built with React and Tailwind CSS for a clean, responsive design
+- **Dark/Light Mode**: Toggle between themes for optimal viewing
+- **Smooth Animations**: Integrated with Framer Motion for engaging scroll effects
+- **Project Showcase**: Detailed view of professional projects with technologies used
+- **Experience Timeline**: Chronological display of professional experience
+- **Skills Matrix**: Visual representation of technical proficiencies
+- **Contact Form**: Direct way to get in touch
+- **Resume Preview**: Modal viewer for resume/CV
+- **GitHub Pages Deployment**: Easy deployment to GitHub Pages
 
-**Prerequisites:**  Node.js
+## Technology Stack
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- **Frontend**: React 19, Vite, Tailwind CSS, Framer Motion, Lucide Icons
+- **Deployment**: GitHub Pages
+- **Development**: TypeScript, ESLint
