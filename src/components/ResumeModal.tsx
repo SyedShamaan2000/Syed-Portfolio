@@ -88,20 +88,20 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                   <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-1.5 mt-3 text-[11px] text-zinc-600">
                     <span className="flex items-center gap-1">
                       <Mail className="h-3.5 w-3.5 text-zinc-400" />
-                      syedshamaan14@gmail.com
+                      04amaanhussaini@gmail.com
                     </span>
                     <span className="flex items-center gap-1">
                       <Phone className="h-3.5 w-3.5 text-zinc-400" />
-                      +91 9100337152
+                      +91 8106984520
                     </span>
                     <a
-                      href="https://www.linkedin.com/in/syed-shamaan-hussaini"
+                      href="https://www.linkedin.com/in/syed-hussaini04/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-1 hover:text-emerald-700 transition-colors"
                     >
                       <Linkedin className="h-3.5 w-3.5 text-zinc-400" />
-                      linkedin.com/in/syed-shamaan-hussaini
+                      linkedin.com/in/syed-hussaini04/
                     </a>
                   </div>
                 </div>
@@ -196,7 +196,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                           </span>
                         </div>
                         <span className="text-emerald-700 font-mono text-[11px] whitespace-nowrap">
-                          Dec 2024 - Present
+                          Dec 2024 - Sept 2026
                         </span>
                       </div>
                       <p className="text-[10px] text-zinc-500 italic mb-1.5">

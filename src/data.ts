@@ -8,11 +8,11 @@ export const portfolioData = {
   avatarUrl: "photo.jpg",
   resumeUrl: "#",
   contact: {
-    email: "syedshamaan14@gmail.com",
-    phone: "+91 9100337152",
+    email: "04amaanhussaini@gmail.com",
+    phone: "+91 8106984520",
     location: "Hyderabad, Telangana",
     github: "https://github.com/SyedShamaan2000",
-    linkedin: "https://www.linkedin.com/in/syed-shamaan-hussaini",
+    linkedin: "https://www.linkedin.com/in/syed-hussaini04/",
   },
   skills: [
     { title: "Languages", skills: ["JavaScript", "Python", "C", "C++"] },
@@ -78,7 +78,7 @@ export const portfolioData = {
       role: "Full Stack Developer",
       company: "Sakesh InfoTech Pvt Ltd",
       location: "Hyderabad, India / Texas, USA",
-      period: "Dec 2024 - Present",
+      period: "Dec 2024 - Sept 2026",
       points: [
         "Built and optimized React UI components for 5+ features, improving performance and usability and reducing unnecessary re-renders by ~25%.",
         "Created scalable FastAPI backend services with structured validation and error handling, delivering 10+ APIs supporting real-time client consumption.",
