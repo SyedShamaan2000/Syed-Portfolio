@@ -138,7 +138,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                         Frameworks & Libraries:
                       </strong>{" "}
                       React, Redux, Tailwind CSS, Material UI, FastAPI,
-                      Streamlit
+                      Langchain, Streamlit
                     </div>
                     <div>
                       <strong className="text-zinc-900 block">
@@ -277,6 +277,14 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                     Core Projects
                   </h2>
                   <div className="space-y-2.5 text-zinc-700 text-[11px] sm:text-xs">
+                    <p>
+                      <strong className="text-zinc-900">
+                        nl2pg (Python, PostgreSQL, Docker, Langchain):
+                      </strong>{" "}
+                      Built an AI agent that translates natural language into
+                      schema-validated Postgres operations, enforcing a
+                      mandatory human-approval gate before any write executes.
+                    </p>
                     <p>
                       <strong className="text-zinc-900">
                         Serverless REST API on AWS (Node.js, Express, Serverless

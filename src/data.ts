@@ -24,6 +24,7 @@ export const portfolioData = {
         "Tailwind CSS",
         "Material UI",
         "FastAPI",
+        "Langchain",
         "Streamlit",
         "Express",
       ],
@@ -108,6 +109,16 @@ export const portfolioData = {
     },
   ],
   projects: [
+    {
+      title: "nl2pg",
+      year: "2026",
+      description:
+        "Built an AI agent that translates natural language into schema-validated Postgres operations, enforcing a mandatory human-approval gate before any write executes.",
+      image:
+        "https://lh3.googleusercontent.com/aida/AEtjO1VkLmdpIEg0cix3vNGjfCMziZWnwGLzUqk7qlwpJIG-XbMJz0lRwn-zGxxpXzNajyWL2AJYdyD1c2xxFtm3sGRm-Age6xV9EZVGu-uTsdZIsfCEGaT6Y8FLlizqFWT33wCoeCeu_U1kcor6xsUtPNST7sHPtNZz5rvrVt5M136V4Br3IHn4E89IrWeR33NXVXWDxARlku5M4y3shksgLybbXv06MvvqxiDXB2866x5IhXG0exnSEcatvMg6=s422",
+      tags: ["Python", "PostgreSQL", "Docker", "Langchain"],
+      githubUrl: "https://github.com/SyedShamaan2000/nl2pg",
+    },
     {
       title: "Serverless REST API on AWS",
       year: "2026",
